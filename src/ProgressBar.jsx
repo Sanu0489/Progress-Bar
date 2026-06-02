@@ -56,7 +56,7 @@ function ProgressBar() {
 
         <button
           className="btn pause-btn"
-          disabled={!start}
+          disabled={progress === 0 || !start || progress === 100}
           onClick={handlePause}
         >
           Pause
